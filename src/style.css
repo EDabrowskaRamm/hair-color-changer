@@ -1,0 +1,93 @@
+:root {
+  --text-color: white;
+  --background-color: #AB9BB5;
+  --right-tile-background-color: #C77BC5;
+  --cta-background-color: #4BE799;
+  --border-radius: 3px;
+}
+
+* {
+	border: none;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: greyscale;
+}
+
+html, body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: var(--text-color);
+}
+
+header {
+	background: url(../images/photo1.png) no-repeat top center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+	height: 400px;
+	background-color: var(--background-color);
+}
+
+.header__btn-close {
+	height: 21px;
+	width: 21px;
+	background: url(../images/close-btn.png);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+	background-size: contain;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.header__premium {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 85%;
+	margin-top: 18px;
+	/* text-align: center; */
+	background: -webkit-linear-gradient(top,  rgba(128,128,128,0) 0%,rgba(204,153,204,0.01) 1%,rgba(170,142,170,0.02) 2%,rgba(170,149,170,0.03) 3%,rgba(170,153,187,0.04) 4%,rgba(170,156,184,0.05) 5%,rgba(162,151,174,0.06) 6%,rgba(173,153,184,0.07) 7%,rgba(173,155,182,0.08) 8%,rgba(173,156,181,0.09) 9%,rgba(168,153,182,0.1) 10%,rgba(168,154,181,0.11) 11%,rgba(174,155,180,0.12) 12%,rgba(174,156,180,0.13) 13%,rgba(168,152,179,0.14) 14%,rgba(170,155,180,0.15) 15%,rgba(170,156,179,0.16) 16%,rgba(170,157,183,0.17) 17%,rgba(170,153,178,0.18) 18%,rgba(171,155,179,0.19) 19%,rgba(171,156,183,0.2) 20%,rgba(171,157,182,0.21) 21%,rgba(169,155,179,0.22) 22%,rgba(170,156,180,0.23) 23%,rgba(172,156,182,0.24) 24%,rgba(172,157,181,0.25) 25%,rgba(170,155,182,0.26) 26%,rgba(173,155,182,0.28) 27%,rgba(172,155,183,0.29) 28%,rgba(173,157,181,0.31) 29%,rgba(170,155,180,0.34) 31%,rgba(171,157,182,0.37) 33%,rgba(170,154,181,0.38) 34%,rgba(172,157,181,0.4) 35%,rgba(171,156,182,0.41) 36%,rgba(170,154,180,0.44) 38%,rgba(172,156,181,0.51) 43%,rgba(172,156,182,0.53) 44%,rgba(171,154,180,0.55) 45%,rgba(172,156,182,0.59) 48%,rgba(172,156,181,0.61) 49%,rgba(172,156,181,0.67) 53%,rgba(172,155,182,0.77) 60%,rgba(172,155,182,0.8) 62%,rgba(170,154,180,0.81) 63%,rgba(172,156,182,0.89) 68%,rgba(170,155,180,0.92) 70%,rgba(170,155,180,0.96) 73%,rgba(170,155,180,1) 81%,rgba(171,155,181,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(128,128,128,0) 0%,rgba(204,153,204,0.01) 1%,rgba(170,142,170,0.02) 2%,rgba(170,149,170,0.03) 3%,rgba(170,153,187,0.04) 4%,rgba(170,156,184,0.05) 5%,rgba(162,151,174,0.06) 6%,rgba(173,153,184,0.07) 7%,rgba(173,155,182,0.08) 8%,rgba(173,156,181,0.09) 9%,rgba(168,153,182,0.1) 10%,rgba(168,154,181,0.11) 11%,rgba(174,155,180,0.12) 12%,rgba(174,156,180,0.13) 13%,rgba(168,152,179,0.14) 14%,rgba(170,155,180,0.15) 15%,rgba(170,156,179,0.16) 16%,rgba(170,157,183,0.17) 17%,rgba(170,153,178,0.18) 18%,rgba(171,155,179,0.19) 19%,rgba(171,156,183,0.2) 20%,rgba(171,157,182,0.21) 21%,rgba(169,155,179,0.22) 22%,rgba(170,156,180,0.23) 23%,rgba(172,156,182,0.24) 24%,rgba(172,157,181,0.25) 25%,rgba(170,155,182,0.26) 26%,rgba(173,155,182,0.28) 27%,rgba(172,155,183,0.29) 28%,rgba(173,157,181,0.31) 29%,rgba(170,155,180,0.34) 31%,rgba(171,157,182,0.37) 33%,rgba(170,154,181,0.38) 34%,rgba(172,157,181,0.4) 35%,rgba(171,156,182,0.41) 36%,rgba(170,154,180,0.44) 38%,rgba(172,156,181,0.51) 43%,rgba(172,156,182,0.53) 44%,rgba(171,154,180,0.55) 45%,rgba(172,156,182,0.59) 48%,rgba(172,156,181,0.61) 49%,rgba(172,156,181,0.67) 53%,rgba(172,155,182,0.77) 60%,rgba(172,155,182,0.8) 62%,rgba(170,154,180,0.81) 63%,rgba(172,156,182,0.89) 68%,rgba(170,155,180,0.92) 70%,rgba(170,155,180,0.96) 73%,rgba(170,155,180,1) 81%,rgba(171,155,181,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.header__title {
+	margin: 3px;
+	text-align: center;
+	font-family: 'Arial Rounded MT Bold';
+	font-size: 26px;
+	font-weight: normal;
+	line-height: 36px;
+	letter-spacing: 2px;
+}
+
+.header__features-list {
+	margin: 0 auto;
+	padding: 10px 15px 15px;
+	font-family: 'Arial';
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	letter-spacing: 1px;
+	list-style-type: none;
+}
+
+.header__feature-item {
+	position: relative;
+}
+
+.header__feature-item:before {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 2px;
+	left: -20px;
+	width: 15px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-image: url('../images/star.png');
+	background-size: 25px;
+	background-position: center;
+}
