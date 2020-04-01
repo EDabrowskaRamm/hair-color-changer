@@ -9,44 +9,48 @@
 </head>
 
 <body>
-  <header class="header">
-    <button type="button" class="header__btn-close"></button>
-    <section class="header__premium">
-      <h1 class="header__title">Get Premium!</h1>
-      <ul class="header__features-list">
-        <li class="header__feature-item">Unlock all colors</li>
-        <li class="header__feature-item">No advertisements</li>
-        <li class="header__feature-item">Pro styling tips</li>
-        <li class="header__feature-item">Product recommendations</li>
-      </ul>
-    </section>
-  </header>
-  <main class="main">
-    <section class="main__info">
-      <div class="main__tile main__tile--month">
-        <p class="main__tile-title">1 Month</p>
-        <span class="main__tile-description">$1.99/month</span>
+  <section class="container">
+    <header class="header">
+      <button type="button" class="header__btn-close"></button>
+      <section class="header__background">
+        <div class="header__premium">
+          <h1 class="header__title">Get Premium!</h1>
+          <ul class="header__features-list">
+            <li class="header__feature-item">Unlock all colors</li>
+            <li class="header__feature-item">No advertisements</li>
+            <li class="header__feature-item">Pro styling tips</li>
+            <li class="header__feature-item">Product recommendations</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="main__info">
+        <div class="main__tile main__tile--month">
+          <p class="main__tile-title">1 Month</p>
+          <span class="main__tile-description">$1.99/month</span>
+        </div>
+        <div class="main__tile main__tile--year">
+          <p class="main__tile-title">1 Year</p>
+          <span class="main__tile-description">$4.99/year</span>
+        </div>
+      </section>
+      <button type="button" class="main__btn-subscribe">Begin Subscription</button>
+      <span class="main__description">Subscription Renews Automatically</span>
+    </main>
+    <footer class="privacy-policy">
+      <div class="privacy-policy__links">
+        <a href="" target="_blank" class="privacy-policy__link">Privacy Policy</a>
+        <a href="" target="_blank" class="privacy-policy__link">Restore Purchase</a>
+        <a href="" target="_blank" class="privacy-policy__link">Terms &amp; Conditions</a>
       </div>
-      <div class="main__tile main__tile--year">
-        <p class="main__tile-title">1 Year</p>
-        <span class="main__tile-description">$4.99/year</span>
-      </div>
-    </section>
-    <button type="button" class="main__btn-subscribe">Begin Subscription</button>
-    <span class="main__description">Subscription Renews Automatically</span>
-  </main>
-  <footer class="privacy-policy">
-    <div class="privacy-policy__links">
-      <a href="" target="_blank" class="privacy-policy__link">Privacy Policy</a>
-      <a href="" target="_blank" class="privacy-policy__link">Restore Purchase</a>
-      <a href="" target="_blank" class="privacy-policy__link">Terms &amp; Conditions</a>
-    </div>
-    <p class="privacy-policy__terms">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant
-      morbi tristique senectus et
-      netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-      feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-  </footer>
+      <p class="privacy-policy__terms">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant
+        morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+        ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </footer>
+  </section>
 </body>
 <script src="./app.js"></script>
 
