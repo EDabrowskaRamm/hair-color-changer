@@ -157,6 +157,7 @@ main {
 	border: 3px solid var(--cta-btn-border-color);
 	border-radius: var(--border-radius);
 	width: 100%;
+	animation: shake 4s infinite;
 }
 
 .main__description {
@@ -184,6 +185,33 @@ main {
 
 .privacy-policy__link {
 	color: var(--text-color-secondary);
+}
+
+@keyframes shake {
+	5%, 50% {
+    transform: scale(1);
+	}
+	10% {
+		transform: scale(.8);
+	}
+	15% {
+		transform: scale(1.07);
+	}
+	20% {
+		transform: scale(1.07) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.07) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.07) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.07) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.07) rotate(0);
+	}
 }
 /* @media (max-width: 768px) {
 
